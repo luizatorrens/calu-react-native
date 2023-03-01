@@ -10,9 +10,9 @@ export default function App() {
   ];
   return (
     <View style={styles.container}>
-      <Header />
+      <Header titulo="teste"/>
       <View>
-        <FlatList data={tasks} renderItem={({ item }) => <Text>{item}</Text>} />
+        <FlatList data={tasks} renderItem={({ item }) => <Text>{item.nome} - {item.idade}</Text>} />
       </View>
     </View>
   );
